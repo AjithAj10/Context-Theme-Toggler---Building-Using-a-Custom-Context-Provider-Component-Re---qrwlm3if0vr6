@@ -5,7 +5,7 @@ import { ThemeContext, ThemeProvider } from './ThemeProvider';
 const Page = () => {
 
     const {theme,setTheme} = useContext(ThemeContext);
-    const [theme1,setTheme1] = useState(theme);
+
     return(
         <div className={'bg-'+theme} id="themed-page">
             <p id="themed-text-container" className={'txt-'+theme}>

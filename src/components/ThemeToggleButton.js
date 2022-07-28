@@ -21,7 +21,7 @@ const ThemeToggleButton = () =>{
     }
     return (
        <>
-       <button className={"btn btn-"+theme} id='global-theme-toggler' onClick={global}>{toggle}</button>
+       <button className={`btn btn-${theme} txt-${theme}`} id='global-theme-toggler' onClick={global}>{toggle}</button>
        </>
     )
 
