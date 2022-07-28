@@ -7,12 +7,18 @@ const LocalThemedBox = () => {
     // console.log(theme);
 
     const [localTheme,setLocalTheme] = useState(theme);
+
     useEffect(() => {
-        console.log('Helo');
+        
         setLocalTheme(theme);
+       let ini = theme === 'dark'? 'Toggle local theme to light' : 'Toggle local theme to dark';
+       setLocalBtn(ini);
+
     },[theme])
 
-     const [localBtn,setLocalBtn] = useState('Toggle local theme to dark')
+const initial = localTheme === 'dark'? 'Toggle local theme to light' : 'Toggle local theme to dark';
+
+     const [localBtn,setLocalBtn] = useState(initial)
 
     let localThemefn = () => {
         if(localBtn === 'Toggle local theme to dark'){
